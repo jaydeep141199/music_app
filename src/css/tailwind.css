@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.marquee {
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  
+  .marquee p {
+    display: inline-block;
+    animation: marquee 10s linear infinite;
+  }
+  
+  @keyframes marquee {
+    0% {
+      transform: translateX(100%);
+      color:yellow;
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
